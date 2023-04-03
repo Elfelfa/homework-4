@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Coding Quiz!</title>
+</head>
+
+<body>
+    <header>
+        <ul id="headerBar">
+            <a href="highscores.html"><h2>View Highscores</h2></a>
+            <a><h2 class="hidden" id="timer">Time: x</h2></a>
+        </ul>
+    </header>
+
+    <main>
+        <h1 class="setLeft" id="question">Coding Quiz Challenge</h1>
+
+        <p class="setLeft" id="subtext">Try to answer the following code-related questions within the time limit. 
+            Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
+
+        <ul class="hidden" id="answers">
+            <li><p>A. Test 1</p><canvas class="buttonCover"></canvas></li>
+            <li><p>A. Test 2</p><canvas class="buttonCover"></canvas></li>
+            <li><p>A. Test 3</p><canvas class="buttonCover"></canvas></li>
+            <li><p>A. Test 4</p><canvas class="buttonCover"></canvas></li>
+        </ul>
+
+        <form class="hidden" id="nameInput">
+            <label>Enter name: </label>
+            <input type:"text" id="nameEntry">
+            <button id="submitBtn">Submit</button>
+        </form>
+
+        <h2 class="hidden" id="result">Test</h2>
+        <button id="startBtn"><p>START GAME</p><canvas class="buttonCover"></canvas></button>
+    </main>
+</body>
+
+</html>
