@@ -18,27 +18,29 @@
     </header>
 
     <main>
-        <h1 class="setLeft" id="question">Coding Quiz Challenge</h1>
+        <h1 id="question">Coding Quiz Challenge</h1>
 
-        <p class="setLeft" id="subtext">Try to answer the following code-related questions within the time limit. 
+        <p id="subtext">Try to answer the following code-related questions within the time limit. 
             Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
 
         <ul class="hidden" id="answers">
-            <li><p>A. Test 1</p><canvas class="buttonCover"></canvas></li>
-            <li><p>A. Test 2</p><canvas class="buttonCover"></canvas></li>
-            <li><p>A. Test 3</p><canvas class="buttonCover"></canvas></li>
-            <li><p>A. Test 4</p><canvas class="buttonCover"></canvas></li>
+            <li class="item"><p>A. Test 1</p><canvas data-number="A" class="buttonCover"></canvas></li>
+            <li class="item"><p>A. Test 2</p><canvas data-number="B" class="buttonCover"></canvas></li>
+            <li class="item"><p>A. Test 3</p><canvas data-number="C" class="buttonCover"></canvas></li>
+            <li class="item"><p>A. Test 4</p><canvas data-number="D" class="buttonCover"></canvas></li>
         </ul>
 
         <form class="hidden" id="nameInput">
-            <label>Enter name: </label>
+            <label>Enter initials: </label>
             <input type:"text" id="nameEntry">
-            <button id="submitBtn">Submit</button>
+            <button id="submitBtn"><p>Submit</p><canvas class="buttonCover"></canvas></button>
         </form>
 
         <h2 class="hidden" id="result">Test</h2>
         <button id="startBtn"><p>START GAME</p><canvas class="buttonCover"></canvas></button>
     </main>
+
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
