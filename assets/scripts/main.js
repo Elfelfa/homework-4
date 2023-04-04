@@ -222,5 +222,7 @@ function countDown()
     if (timeLeft <= 0)
     {
         clearInterval(myTimer);
+        timeLeft = 0;
+        gameEnd();
     };
 }
